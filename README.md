@@ -1,115 +1,170 @@
 # 🚖 Uber Mobility Analysis Dashboard (Power BI)
 
-![Dashboard Preview](Screenshot 2026-02-01 123543.png)
+<p align="center">
+  <img src="./Overview.png" width="100%">
+</p>
+
+---
 
 ## 🚀 Project Overview
 
 This project presents an **end-to-end Power BI dashboard** built to analyze **Uber mobility data** across bookings, revenue, distance, time, and locations.
-It converts raw trip data into **actionable business insights** to improve pricing, operations, and customer experience.
 
-> 💡 Designed with a **business-first & HR-friendly approach** — focused on decisions, not just visuals.
+It converts raw trip data into **actionable business insights** that help stakeholders improve **pricing strategy, driver allocation, and operational efficiency**.
+
+> 💡 Built with a **business-first mindset** — dashboards that drive decisions.
 
 ---
 
 ## 🎯 Business Problem
 
-Operations and strategy teams often struggle to answer:
+Urban mobility companies need to understand:
 
-* When is ride demand highest?
-* Which locations generate maximum bookings?
-* Which vehicle types perform best?
-* How can pricing and driver allocation be optimized?
+* When demand is highest
+* Which locations generate the most trips
+* What vehicle types customers prefer
+* How time impacts booking behavior
+* Where revenue is generated
 
-This dashboard answers all of that in **one interactive analytical solution**.
+This dashboard answers all of that in **one interactive Power BI solution**.
 
 ---
 
 ## 🔑 Key KPIs Tracked
 
-| Metric              | Value      |
-| ------------------- | ---------- |
-| Total Bookings      | 103.7K     |
-| Total Booking Value | $1.6M      |
-| Avg Booking Amount  | $15.0      |
-| Total Trip Distance | 349K miles |
-| Avg Trip Distance   | 3 miles    |
-| Avg Trip Time       | 16 min     |
+| KPI                 | Description        |
+| ------------------- | ------------------ |
+| Total Bookings      | Total trips booked |
+| Total Booking Value | Total revenue      |
+| Avg Booking Value   | Revenue per trip   |
+| Total Trip Distance | Total miles        |
+| Avg Trip Distance   | Avg miles per trip |
+| Avg Trip Time       | Avg duration       |
+| Peak Hours          | High demand time   |
+| Top Locations       | Hotspot areas      |
 
 ---
 
-## 📊 Dashboard Highlights
-
-### 📌 Overview Analysis
-
-![Overview](Screenshot 2026-02-01 123543.png)
-
-* Booking & revenue trends
-* Payment method contribution
-* Day vs Night trip analysis
-* Vehicle-wise performance
-* Top pickup & drop-off locations
-* Farthest trip identification
+# 📊 Dashboard Pages
 
 ---
 
-### ⏰ Time Analysis
+## 1️⃣ Overview Analysis
 
-![Time Analysis](Screenshot 2026-02-01 123608.png)
+<p align="center">
+  <img src="./Overview.png" width="100%">
+</p>
 
-* 10-minute interval demand trends
-* Day-wise booking pattern (Mon–Sun)
-* Hour × Day heatmap for peak analysis
-* Peak demand in evenings & weekends
+### 🔍 What This Shows
+
+* Overall performance KPIs
+* Revenue & booking trends
+* Payment type distribution
+* Vehicle performance
+* Location intelligence
+
+### 📈 Key Insights
+
+✔ UberX is the most booked vehicle
+✔ Cash & Uber Pay dominate payments
+✔ East Harlem South is top pickup & drop
+✔ Day trips generate ~62% revenue
+✔ Longest trip identified for pricing analysis
 
 ---
 
-### 📄 Details (Drill-Through)
+## 2️⃣ Time Analysis
 
-![Details](Screenshot 2026-02-01 123628.png)
+<p align="center">
+  <img src="./Timeanalysis.png" width="100%">
+</p>
 
-* Row-level trip details
-* Drill-through from any visual
-* Full data view using bookmarks
-* HR-friendly transparency of analysis
+### ⏰ What This Shows
+
+* Bookings by pickup time
+* Hour × Day heatmap
+* Weekday vs weekend demand
+* Peak & off-peak analysis
+
+### 📈 Key Insights
+
+✔ Peak demand: 8–11 AM & 5–8 PM
+✔ Lowest demand: 1–5 AM
+✔ Weekend demand is higher
+✔ Friday & Sunday are peak days
+
+---
+
+## 3️⃣ Trip Details (Drill-Through Page)
+
+<p align="center">
+  <img src="./Drill.png" width="100%">
+</p>
+
+### 🧾 What This Shows
+
+* Trip-level raw data
+* Drill-through from any chart
+* Filtered & full data toggle
+* Export-ready table
+
+### 🎯 Why It Matters
+
+✔ Auditing & deep analysis
+✔ Operational review
+✔ Data validation
+✔ Shows advanced Power BI skills
 
 ---
 
 ## 🧠 Insights That Matter (HR Favourite Section)
 
-✔ Clear peak & off-peak demand identification
-✔ High-demand locations for driver optimization
-✔ Vehicle-type performance for fleet planning
-✔ Data-backed pricing optimization opportunities
-✔ Strong operational & analytical storytelling
+✔ Business KPI understanding
+✔ Advanced Power BI + DAX
+✔ Dynamic measures & slicers
+✔ Drill-through & bookmarks
+✔ Storytelling with data
+✔ Interview-ready project
 
 ---
 
 ## 🛠️ Tools & Technologies Used
 
-* **Power BI** (DAX, Power Query, Bookmarks)
-* **Star Schema Data Model**
-* **Dynamic Measure Selector (Disconnected Table)**
-* **Time Intelligence Analysis**
-* **Heatmaps, Trends & Interactive Visuals**
-* **Drill-through & Navigation UX**
+* Power BI Desktop
+* DAX (Advanced Measures)
+* Power Query (ETL)
+* Star Schema Data Model
+* Disconnected Tables
+* Bookmarks & Drill-through
+* Heatmaps & Interactive Visuals
 
 ---
 
 ## 🗂️ Data Model
 
-* **Fact Table:** Uber Trip Details
-* **Dimensions:** Location, Date, Vehicle, Payment Type
-* Optimized for performance & scalability
+**Fact Table**
+
+* Uber Trips
+
+**Dimension Tables**
+
+* Date
+* Location
+* Vehicle
+* Payment Type
+* Time
+
+Optimized using **Star Schema** for performance.
 
 ---
 
 ## 📌 How to Use
 
-1. Open `Uber Mobility Analysis.pbix`
-2. Refresh data (if required)
-3. Use slicers for Date, City, Vehicle, Payment Type
-4. Switch KPIs using the dynamic measure selector
-5. Drill through for detailed trip-level insights
+1. Download the `.pbix` file
+2. Open in Power BI Desktop
+3. Use slicers (Date, City, Measure)
+4. Drill through visuals
+5. Reset using clear filters button
 
 ---
 
@@ -117,23 +172,20 @@ This dashboard answers all of that in **one interactive analytical solution**.
 
 This project demonstrates:
 
-* Real-world business problem solving
-* Strong Power BI & DAX skills
-* Data modeling best practices
-* Stakeholder-ready dashboards
-* Interview & HR-ready presentation
+* Real-world analytics
+* Business thinking
+* Power BI mastery
+* HR-friendly storytelling
+* Job-ready dashboard design
 
-> ⭐ Built to impress **HR, Analysts, and Hiring Managers**
+> ⭐ Built to impress **HR, Analysts & Hiring Managers**
 
 ---
 
 ## 📬 Contact
 
 **Vikas Morabagi**
+
 📧 Email: [vikasmora9080@gmail.com](mailto:vikasmora9080@gmail.com)
 💼 LinkedIn: [https://linkedin.com/in/vikas-morabagi](https://linkedin.com/in/vikas-morabagi)
 🧑‍💻 GitHub: [https://github.com/VikasMorabagi01](https://github.com/VikasMorabagi01)
-
----
-
-### ⭐ If you like this project, give it a star — it really helps!
